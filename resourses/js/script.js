@@ -65,7 +65,7 @@ $(document).ready(function() {
     });
     
     $('.js--wp-4').waypoint(function(direction){
-        $('.js--wp-4').addClass('animated fadeIn');
+        $('.js--wp-4').addClass('animated bounceIn');
         
     },{
         offset: '50%;'
@@ -86,6 +86,14 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }
         
+        
+        
+        /*  Maps   */
+        new GMaps({
+          div: '.map',
+          lat: -12.043333,
+          lng: -77.028333
+        });
         
         
         
